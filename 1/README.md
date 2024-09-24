@@ -49,10 +49,10 @@ docker pull redis
 ```
 
 ```
-docker run --name myredis1 -p 6379:6379 -d redis
+docker run --name myredis -p 6379:6379 -d redis
 ```
 ```
-docker exec -it myredis1 redis-cli
+docker exec -it myredis redis-cli
 ```
 ```
 CONFIG GET databases
@@ -60,7 +60,7 @@ CONFIG GET databases
 This will show how many databases are configured for the Redis instance. By default, Redis has 16 databases, indexed from 0 to 15.
 
 ```
-SELECT 1
+SELECT 0
 ```
 ```
 KEYS *
