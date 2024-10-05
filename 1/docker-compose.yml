@@ -1,0 +1,13 @@
+services:
+  redis:
+    image: redis
+    container_name: myredis2
+    ports:
+      - "6379:6379"
+volumes:
+  redis-data:
+
+
+
+
+
